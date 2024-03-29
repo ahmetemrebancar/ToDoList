@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TO DO LİST</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="IEEEÖdev2.css">
+    <link rel="icon" href="https://static.thenounproject.com/png/1382267-200.png" type="image/x-icon" />
+
+</head>
+
+<body>
+    <div class="divstili">
+        <br><br><br><br>
+        <h2 style="color: white;">MY TO-DO-LİST</h2>
+
+        <form>
+            <label for="eposta" style="color: white;">E-posta giriniz: </label>
+
+            <input id="eposta" type="email" name="eposta">
+            <br>
+            <label for="sifre" style="color: white;">Şifre giriniz: </label>
+
+            <input id="sifre" type="password" name="sifre">
+            <br>
+
+
+
+            <button type="button" onclick="login()">Onayla</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script>
+        function login() {
+            var eposta = document.getElementById('eposta').value;
+            var sifre = document.getElementById('sifre').value;
+            var errorMessage = document.getElementById('error-message');
+
+
+            if (eposta === 'simgeTümkaya@gmail.com' && sifre === 'yönetimKuruluBaşkanı') {
+                errorMessage.style.color = 'green';
+                errorMessage.innerHTML = 'Başarıyla giriş yaptınız.';
+                window.location.href = 'todo.html';
+            }
+
+            else if (eposta === 'fatihenver@gmail.com' && sifre === 'yönetimKurulu') {
+                errorMessage.style.color = 'green';
+                errorMessage.innerHTML = 'Başarıyla giriş yaptınız.';
+                window.location.href = 'todo.html';
+            }
+            else if (eposta === 'mustafadincer@gmail.com' && sifre === 'cs_baskani7') {
+                errorMessage.style.color = 'green';
+                errorMessage.innerHTML = 'Başarıyla giriş yaptınız.';
+                window.location.href = 'todo.html';
+            }
+            else if (eposta === 'tahacansiz@gmail.com' && sifre === 'mobil_takım_kaptanı1') {
+                errorMessage.style.color = 'green';
+                errorMessage.innerHTML = 'Başarıyla giriş yaptınız.';
+                window.location.href = 'todo.html';
+            }
+            else if (eposta === 'kamilTunçok@gmail.com' && sifre === 'mobilÇekirdeküyesi') {
+                errorMessage.style.color = 'green';
+                errorMessage.innerHTML = 'Başarıyla giriş yaptınız.';
+                window.location.href = 'todo.html';
+            }
+            else {
+
+                alert("E-posta ve şifrenizi kontol ediniz!");
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
